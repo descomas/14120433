@@ -12,7 +12,14 @@ class ViewController: UIViewController {
 
    
     
+   
     @IBOutlet weak var line: UIImageView!
+    
+    @IBOutlet weak var redRunner: UIImageView!
+    
+    var dynamicAnimator: UIDynamicAnimator!
+    var dynamicItemBehavior: UIDynamicItemBehavior!
+    
     
     
     override func viewDidLoad() {
@@ -27,6 +34,11 @@ class ViewController: UIViewController {
         }, completion: nil
         )
         
+        dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
+        
+        dynamicItemBehavior = UIDynamicItemBehavior(items: [redRunner])
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 300), for: redRunner)
+        dynamicAnimator.addBehavior(dynamicItemBehavior)
     }
  
  

@@ -17,6 +17,7 @@
 		A28FE5EF2044621F003706FE /* _4120433_MotionTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FE5EE2044621F003706FE /* _4120433_MotionTrackUITests.swift */; };
 		A28FE5FE2044626D003706FE /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = A28FE5FC2044626C003706FE /* line.png */; };
 		A28FE5FF2044626D003706FE /* running track.png in Resources */ = {isa = PBXBuildFile; fileRef = A28FE5FD2044626D003706FE /* running track.png */; };
+		A298D05A207274E4006EC2C1 /* redRunner2.png in Resources */ = {isa = PBXBuildFile; fileRef = A298D059207274E4006EC2C1 /* redRunner2.png */; };
 		A2AF26D32065612E00646F34 /* DraggingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF26D22065612E00646F34 /* DraggingObject.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		A28FE5F02044621F003706FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A28FE5FC2044626C003706FE /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		A28FE5FD2044626D003706FE /* running track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "running track.png"; sourceTree = "<group>"; };
+		A298D059207274E4006EC2C1 /* redRunner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redRunner2.png; sourceTree = "<group>"; };
 		A2AF26D22065612E00646F34 /* DraggingObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggingObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				A28FE5D02044621F003706FE /* ViewController.swift */,
 				A2AF26D22065612E00646F34 /* DraggingObject.swift */,
 				A28FE5D22044621F003706FE /* Main.storyboard */,
+				A298D059207274E4006EC2C1 /* redRunner2.png */,
 				A2625A55206550DA00D56AEB /* Runner.png */,
 				A28FE5FC2044626C003706FE /* line.png */,
 				A28FE5FD2044626D003706FE /* running track.png */,
@@ -250,6 +253,7 @@
 				A2625A56206550DA00D56AEB /* Runner.png in Resources */,
 				A28FE5FF2044626D003706FE /* running track.png in Resources */,
 				A28FE5FE2044626D003706FE /* line.png in Resources */,
+				A298D05A207274E4006EC2C1 /* redRunner2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

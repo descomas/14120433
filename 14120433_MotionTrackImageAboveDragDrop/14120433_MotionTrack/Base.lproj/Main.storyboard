@@ -30,12 +30,17 @@
                                 <rect key="frame" x="152" y="490" width="88" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redRunner2.png" translatesAutoresizingMaskIntoConstraints="NO" id="6nn-TD-UBF">
+                                <rect key="frame" x="254" y="-32" width="47" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="line" destination="C9o-gB-emr" id="o9Q-J6-9ia"/>
+                        <outlet property="redRunner" destination="6nn-TD-UBF" id="Oml-6S-Nke"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -46,6 +51,7 @@
     <resources>
         <image name="Runner.png" width="1167" height="1280"/>
         <image name="line.png" width="555" height="10"/>
+        <image name="redRunner2.png" width="135" height="280"/>
         <image name="running track.png" width="609" height="1158"/>
     </resources>
 </document>
