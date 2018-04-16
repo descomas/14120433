@@ -40,6 +40,7 @@
                     </view>
                     <connections>
                         <outlet property="line" destination="C9o-gB-emr" id="o9Q-J6-9ia"/>
+                        <outlet property="mainRunner" destination="4xp-e4-E0P" id="d94-zi-tJA"/>
                         <outlet property="redRunner" destination="6nn-TD-UBF" id="Oml-6S-Nke"/>
                     </connections>
                 </viewController>

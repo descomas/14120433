@@ -8,17 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+protocol subviewDelegate{
+    func collision()
+}
 
+class ViewController: UIViewController, subviewDelegate{
    
     
-   
+    
+   // declaring Variables
     @IBOutlet weak var line: UIImageView!
     
     @IBOutlet weak var redRunner: UIImageView!
     
+    @IBOutlet weak var mainRunner: DraggingObject!
+    
     var dynamicAnimator: UIDynamicAnimator!
     var dynamicItemBehavior: UIDynamicItemBehavior!
+    var collisionBehavior: UICollisionBehavior!
     
     
     
@@ -28,25 +35,36 @@ class ViewController: UIViewController {
         //Animation of sun and balloon
         
         
-        UIView.animate(withDuration: 6, delay: 0.0, options: [UIViewAnimationOptions.repeat, .curveLinear], animations:
+            UIView.animate(withDuration: 6, delay: 0.0, options: [UIViewAnimationOptions.repeat, .curveLinear], animations:
             {
                 self.line.center.y += self.view.bounds.height
-        }, completion: nil
-        )
+            }, completion: nil
+            )
         
         dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
         
         dynamicItemBehavior = UIDynamicItemBehavior(items: [redRunner])
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 300), for: redRunner)
+        
+        //y: sets the time for the redrunner to come down
+        
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x: 0, y: 200), for: redRunner)
         dynamicAnimator.addBehavior(dynamicItemBehavior)
+        
+        mainRunner.myDelegate = self
+   
     }
  
- 
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func collision(){
+        collisionBehavior = UICollisionBehavior(items:[redRunner])
+        collisionBehavior.addBoundary(withIdentifier: "Main Runner" as NSCopying, for: UIBezierPath(rect:mainRunner.frame))
+        dynamicAnimator.addBehavior(collisionBehavior)
+    }
+ 
 
 }
 
